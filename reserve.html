@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>| RESERVE | ON/OFF Cafe 仕事もプライベートも棚卸しできる梅田のカフェ</title>
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <link rel="stylesheet" href="css/slick-theme.css" />
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Noto+Serif+JP:wght@300&display=swap"
+    rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body id="reservePage">
+  <div class="wrapper">
+    <header class="headerTop">
+      <h1>
+        <a href="index.html"><img src="images/header_logo.png" alt="ON/OFF Cafe ロゴ" /></a>
+      </h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="index.html#news">NEWS</a></li>
+          <li><a href="index.html#access">ACCESS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="reserve.html">RESERVE</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+
+      <div class="mainArea">
+        <div class="breadcrumb">
+          <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i>
+                HOME</a></li>
+            <li>RESERVE</li>
+          </ul>
+        </div>
+        <main>
+          <article>
+            <div class="contents">
+              <h1 class="">RESERVE － ご予約 －</h1>
+              <div class="contactTxt">
+                <p>
+                  こちらは、3F OFF FLOOR 予約専用フォームになります。<br>
+                  フォーム送信後、予約確定メールが来ましたらご予約確定となります。<br>
+                  ご予約のお客様優先となるため、日時がお決まりでしたらご予約を
+                  お勧めしております。<br>
+                  なお無断キャンセルは罰金対象となりますので、ご留意ください。<br>
+                  詳しい内容は、<a href="#">利用規約</a>をご参照ください。
+                </p>
+              </div>
+
+              <div class="contactCts">
+                <section id="contact">
+                  <h2 class="txtCenter">3F ON FLOOR － ご予約フォーム －
+                  </h2>
+
+                  <form action="#" method="post">
+                    <table>
+                      <tr>
+                        <th class="hissu"><label for="kinds">会員種別</label></th>
+                        <td>
+                          <input id="dropin" type="radio" name="kinds" value="dropin"><label for="dropin">新規</label>
+                          <input id="member" type="radio" name="kinds" value="member"><label for="member">会員</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="hissu"><label for="name">お名前</label></th>
+                        <td><input id="name" type="text" name="name" placeholder="姓　名" required></td>
+                      </tr>
+                      <tr>
+                        <th class="hissu"><label for="kananame">フリガナ</label></th>
+                        <td><input id="kananame" type="text" name="kananame" placeholder="セイ　メイ" required></td>
+                      </tr>
+                      <tr>
+                        <th class="hissu"><label for="mail">メールアドレス</label></th>
+                        <td><input id="mail" type="email" name="mail" placeholder="xxxxxx@xxxxxx" required></td>
+                      </tr>
+                      <tr>
+                        <th class="hissu"><label for="mail02">メールアドレス（確認用）</label></th>
+                        <td><input id="mail02" type="email" name="mail02" placeholder="xxxxxx@xxxxxx" required></td>
+                      </tr>
+                      <tr>
+                        <th class="hissu"><label for="phone">電話番号</label></th>
+                        <td><input id="phone" type="tel" name="phone" placeholder="ハイフン無し" required></td>
+                      </tr>
+                      <tr>
+                        <th class="hissu"><label for="people">人数</label></th>
+                        <td><input id="people" type="tel" name="people" placeholder="" required maxlength="1">名</td>
+                      </tr>
+                      <tr>
+                        <th class="hissu"><label for="day">来店日付</label></th>
+                        <td><input id="day" type="date" name="day" required></td>
+                      </tr>
+                      <tr>
+                        <th class="hissu"><label for="times">来店時間</label></th>
+                        <td>
+                          <input id="timeBefore" type="time" min="08:00" max="21:30" 　name="timeBefore" required>
+                          〜
+                          <input id="timeAfter" type="time" min="08:30" max="23:00" 　name="timeAfter" required>
+                        </td>
+                      </tr>
+
+                    </table>
+                    <div class="policy">
+                      <input id="policy" type="checkbox" name="policy">
+                      <label for="policy"><a href="#">利用規約</a>と<a href="#">プライバシーポリシー</a>に同意する</label>
+                    </div>
+                    <div class="submit">
+                      <input type="submit" value="予約内容を確認する">
+                    </div>
+                  </form>
+                </section>
+
+              </div>
+            </div>
+
+          </article>
+        </main>
+      </div>
+
+      <footer id="footer">
+         <p id="page-top"><a href="#">Page Top</a></p> 
+        <a href="index.html"><img src="images/footer_logo.png" alt="ON/OFF Cafe ロゴ"></a>
+        <p>Copyright © 2021 ON/OFF Cafe All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/slick.min.js"></script>
+
+</body>
+
+</html>
